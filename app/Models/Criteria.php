@@ -8,15 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Criteria extends Model
 {
-    use HasFactory, HasUuids;
+    use HasFactory;
 
     protected $fillable = [
-        'name',
-        'category',
-        'weight',
+        'nama_kriteria',
+        'kode_kriteria',
     ];
 
-    protected $guarded = [
-
-    ];
+    protected $guarded = [];
 }

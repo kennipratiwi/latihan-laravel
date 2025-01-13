@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CriteriaController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,5 +25,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/criteria', [App\Http\Controllers\CriteriaController::class, 'index'])->name('criteria');
+// Route::get('/criteria', [App\Http\Controllers\CriteriaController::class, 'index'])->name('criteria');
+
+Route::resource('criteria', CriteriaController::class);
+
 Route::get('/alternatif', [App\Http\Controllers\AlternatifController::class, 'index'])->name('alternatif');
