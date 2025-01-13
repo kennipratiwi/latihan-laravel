@@ -24,15 +24,20 @@
             <span>Data Kriteria</span></a>
     </li>
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route('subcriteria.index') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Data Aspek</span></a>
+            <span>Data SubKriteria</span></a>
     </li>
 
      <li class="nav-item active">
         <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Nilai Alternatif</span></a>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('hasilperhitungan') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Hasil Perhitungan</span></a>
     
     <!-- Divider -->
     <hr class="sidebar-divider">
