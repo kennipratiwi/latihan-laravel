@@ -4,7 +4,7 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Criteria</h1>
+        <h1 class="h3 mb-2 text-gray-800">Kriteria</h1>
 
 
         <!-- DataTales Example -->
@@ -18,8 +18,9 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Nama</th>
+                                <th>Nama Kriteria</th>
                                 <th>Kode Kriteria</th>
+                                <th>Bobot Kriteria</th>
                                 <th>Action</th>
                                 
                             </tr>
@@ -31,6 +32,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $kriteria->nama_kriteria }}</td>
                                     <td>{{ $kriteria->kode_kriteria }}</td>
+                                    <td>{{ $kriteria->bobot_kriteria }}</td>
                                     <td>
                                         <a href="{{ route('criteria.show', $kriteria->id) }}"
                                             class="btn btn-info btn-sm">Detail</a>

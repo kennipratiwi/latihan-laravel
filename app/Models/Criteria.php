@@ -13,6 +13,7 @@ class Criteria extends Model
     protected $fillable = [
         'nama_kriteria',
         'kode_kriteria',
+        'bobot_kriteria',
     ];
 
     protected $guarded = [];

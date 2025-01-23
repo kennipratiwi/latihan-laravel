@@ -13,6 +13,14 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
+            <div class="mb-3">
+                <label for="bobot_kriteria" class="form-label">bobot Kriteria(%)</label>
+                <input type="text" class="form-control @error('bobot_kriteria') is-invalid @enderror"
+                    name="bobot_kriteria" value="{{ old('bobot_kriteria') }}">
+                @error('bobot_kriteria')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
             {{-- <div class="mb-3">
                 <label for="kode_kriteria" class="form-label">Kode Kriteria</label>
                 <input type="text" class="form-control @error('kode_kriteria') is-invalid @enderror" name="kode_kriteria"
